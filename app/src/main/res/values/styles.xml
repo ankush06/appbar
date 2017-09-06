@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">?android:attr/textColorSecondaryInverseNoDisable
+        </item>
+        <item name="android:textColorPrimaryInverse">@color/primary_text_material_dark</item>
+        <item name="android:colorForeground">@color/foreground_material_light</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item> <!-- #ffffff -->>
+
+    </style>
+
+    <style name="AppTheme.mainNavigationHeader" >
+        <item name="android:textColor">@color/primary_text_material_dark</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="myCustomMenuTextApearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="MyActionBarStyle" parent="android:style/Widget.Holo.Light">
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+</resources>
