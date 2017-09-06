@@ -16,10 +16,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 
-/**
- * Created by arai on 8/30/2017.
- */
-
 public class BaseToolbarActivity extends AppCompatActivity implements  NavigationView.OnNavigationItemSelectedListener {
 
     public DrawerLayout mDrawerLayout;
@@ -31,9 +27,8 @@ public class BaseToolbarActivity extends AppCompatActivity implements  Navigatio
     @Override
     public void setContentView(int layoutResID)
     {
-         /**
-         * This is going to be our actual root layout.
-         */
+         //This is going to be our actual root layout.
+
         mDrawerLayout = (DrawerLayout) getLayoutInflater().inflate(R.layout.activity_base_toolbar, null);
         FrameLayout activityContainer = (FrameLayout) mDrawerLayout.findViewById(R.id.content_frame);
         getLayoutInflater().inflate(layoutResID, activityContainer, true);
@@ -66,7 +61,7 @@ public class BaseToolbarActivity extends AppCompatActivity implements  Navigatio
         navigationView.setNavigationItemSelectedListener(this);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+       // actionBar.setDisplayHomeAsUpEnabled(true);
     }
     @Override
     public void onBackPressed() {
@@ -117,17 +112,17 @@ public class BaseToolbarActivity extends AppCompatActivity implements  Navigatio
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
-        if(item == null)
-            return false;
-        int id = item.getItemId();
-        if (id == R.id.settings) {
-            Log.d(TAG, " settings selected ....................................................................");
-        } else if (id == R.id.search) {
-            Log.d(TAG, "search selected ....................................................................");
-        }
+        if(item != null) {
+            int id = item.getItemId();
+            if (id == R.id.settings) {
+                Log.d(TAG, " settings selected ....................................................................");
+            } else if (id == R.id.search) {
+                Log.d(TAG, "search selected ....................................................................");
+            }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawerLayout);
-        drawer.closeDrawer(GravityCompat.START);
+            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawerLayout);
+            drawer.closeDrawer(GravityCompat.START);
+        }
         return true;
     }
 
