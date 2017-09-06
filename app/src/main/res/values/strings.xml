@@ -4,4 +4,8 @@
     <string name="drawer_close">drawer_close</string>
 
     <string name="settings_lebel">Settings</string>
+    <string name="nav_header_str"> Hello. Sign In </string>
+    <string name="settings_window_header"> Your settings are here </string>
+    <string name="chart_lebel">Chart</string>
+    <string name="search_title">search</string>
 </resources>

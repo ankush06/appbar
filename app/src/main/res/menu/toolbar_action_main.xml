@@ -5,8 +5,8 @@
     <item
         android:id="@+id/action_search1"
         android:icon="@mipmap/ic_search_white_24dp"
-        android:title="string/search"
-        app:showAsAction="always"
+        android:title="@string/search_title"
+        app:showAsAction="ifRoom"
         android:enabled="true"
         android:visible="true"
         app:actionViewClass="android.support.v7.widget.SearchView"/>
@@ -15,9 +15,9 @@
         android:id="@+id/chart"
         android:enabled="true"
         android:icon="@mipmap/ic_add_shopping_cart_white_24dp"
-        android:title="Chart"
+        android:title="@string/chart_lebel"
         android:visible="true"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
 
 
 </menu>

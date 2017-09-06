@@ -6,12 +6,12 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/settings"
         android:icon="@mipmap/ic_settings_applications_white_24dp"
-        android:title="Settings"
+        android:title="@string/settings_lebel"
         app:showAsAction="ifRoom|collapseActionView"
         android:visible="true" />
 
     <item android:id="@+id/search"
         app:showAsAction="ifRoom|collapseActionView"
     android:icon="@mipmap/ic_search_white_24dp"
-    android:title="Search"/>
+    android:title="@string/search_title"/>
 </menu>

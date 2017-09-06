@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="55dp"
+    android:layout_height="75dp"
     android:background="@color/colorPrimary"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello. Sign In"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingTop="15dp"
+        android:text="@string/nav_header_str"
         android:textColor="@color/primary_text_material_dark"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textStyle="italic" />
 </RelativeLayout>

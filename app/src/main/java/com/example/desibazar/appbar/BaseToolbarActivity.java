@@ -109,7 +109,7 @@ public class BaseToolbarActivity extends AppCompatActivity implements  Navigatio
                 Log.e(TAG, "selected default....................................................................");
 
         }
-        // TODO selecting activity...
+        // TOD0O selecting activity...
         return super.onOptionsItemSelected(item);
     }
 
@@ -117,6 +117,8 @@ public class BaseToolbarActivity extends AppCompatActivity implements  Navigatio
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+        if(item == null)
+            return false;
         int id = item.getItemId();
         if (id == R.id.settings) {
             Log.d(TAG, " settings selected ....................................................................");
